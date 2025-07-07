@@ -1,11 +1,5 @@
 import { Command } from "commander";
-import {
-  importDirectorySync,
-  cleanupSVG,
-  runSVGO,
-  parseColors,
-  isEmptyColor,
-} from "@iconify/tools";
+import { importDirectorySync, cleanupSVG, runSVGO } from "@iconify/tools";
 import fs from "fs";
 
 const program = new Command();
@@ -47,15 +41,6 @@ program
       try {
         // Clean up icon code
         cleanupSVG(svg);
-
-        // Assume icon is monotone: replace color with currentColor, add if missing
-        // If icon is not monotone, remove this code
-        parseColors(svg, {
-          defaultColor: "currentColor",
-          callback: (attr, colorStr, color) => {
-            return !color || isEmptyColor(color) ? colorStr : "currentColor";
-          },
-        });
 
         // Optimise
         runSVGO(svg);
