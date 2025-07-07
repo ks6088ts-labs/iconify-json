@@ -1,6 +1,22 @@
 <!-- The content below will be included at the end of the <head> element. -->
 <script type="text/javascript">
-  document.addEventListener("DOMContentLoaded", function () {
-    // your code here
-  });
+  const configureMermaidIconPacks = () => {
+    window["mermaid"].registerIconPacks([
+      {
+        name: "azure",
+        loader: () =>
+          fetch("https://raw.githubusercontent.com/ks6088ts-labs/iconify-json/refs/heads/releases/azure/v21/assets/azure/v21/icons.json").then(
+            (res) => res.json()
+          ),
+      },
+    ]);
+  };
+
+  if (document.readyState !== 'loading') {
+    configureMermaidIconPacks();
+  } else {
+    document.addEventListener("DOMContentLoaded", () => {
+      configureMermaidIconPacks();
+    });
+  }
 </script>
