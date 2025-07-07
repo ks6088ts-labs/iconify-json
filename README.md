@@ -1,7 +1,7 @@
-[![test](https://github.com/ks6088ts/template-typescript/actions/workflows/test.yaml/badge.svg?branch=main)](https://github.com/ks6088ts/template-typescript/actions/workflows/test.yaml?query=branch%3Amain)
-[![docker](https://github.com/ks6088ts/template-typescript/actions/workflows/docker.yaml/badge.svg?branch=main)](https://github.com/ks6088ts/template-typescript/actions/workflows/docker.yaml?query=branch%3Amain)
-[![docker-release](https://github.com/ks6088ts/template-typescript/actions/workflows/docker-release.yaml/badge.svg)](https://github.com/ks6088ts/template-typescript/actions/workflows/docker-release.yaml)
-[![ghcr-release](https://github.com/ks6088ts/template-typescript/actions/workflows/ghcr-release.yaml/badge.svg)](https://github.com/ks6088ts/template-typescript/actions/workflows/ghcr-release.yaml)
+[![test](https://github.com/ks6088ts-labs/iconify-json/actions/workflows/test.yaml/badge.svg?branch=main)](https://github.com/ks6088ts-labs/iconify-json/actions/workflows/test.yaml?query=branch%3Amain)
+[![docker](https://github.com/ks6088ts-labs/iconify-json/actions/workflows/docker.yaml/badge.svg?branch=main)](https://github.com/ks6088ts-labs/iconify-json/actions/workflows/docker.yaml?query=branch%3Amain)
+[![docker-release](https://github.com/ks6088ts-labs/iconify-json/actions/workflows/docker-release.yaml/badge.svg)](https://github.com/ks6088ts-labs/iconify-json/actions/workflows/docker-release.yaml)
+[![ghcr-release](https://github.com/ks6088ts-labs/iconify-json/actions/workflows/ghcr-release.yaml/badge.svg)](https://github.com/ks6088ts-labs/iconify-json/actions/workflows/ghcr-release.yaml)
 
 # template-typescript
 
