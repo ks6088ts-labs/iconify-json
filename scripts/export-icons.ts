@@ -48,15 +48,6 @@ program
         // Clean up icon code
         cleanupSVG(svg);
 
-        // Assume icon is monotone: replace color with currentColor, add if missing
-        // If icon is not monotone, remove this code
-        parseColors(svg, {
-          defaultColor: "currentColor",
-          callback: (attr, colorStr, color) => {
-            return !color || isEmptyColor(color) ? colorStr : "currentColor";
-          },
-        });
-
         // Optimise
         runSVGO(svg);
       } catch (err) {
