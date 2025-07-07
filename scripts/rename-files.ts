@@ -35,15 +35,11 @@ function renameFilesRecursively(directory: string, pattern: RegExp) {
 program
   .name("rename-files")
   .description("Recursively rename files in a directory")
-  .option(
-    "-d, --directory <directory>",
-    "directory to rename files in",
-    "assets/icons"
-  )
+  .option("-d, --directory <directory>", "directory to rename files in", "assets/icons")
   .option(
     "-p, --pattern <pattern>",
     "regex pattern to match and extract new filename",
-    "^\\d+-icon-service-(.+)$"
+    "^\\d+-icon-service-(.+)$",
   )
   .action((options) => {
     if (!options.directory) {

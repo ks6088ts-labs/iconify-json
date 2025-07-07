@@ -1,11 +1,5 @@
 import { Command } from "commander";
-import {
-  importDirectorySync,
-  cleanupSVG,
-  runSVGO,
-  parseColors,
-  isEmptyColor,
-} from "@iconify/tools";
+import { importDirectorySync, cleanupSVG, runSVGO } from "@iconify/tools";
 import fs from "fs";
 
 const program = new Command();
