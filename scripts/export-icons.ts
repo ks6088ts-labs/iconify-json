@@ -13,17 +13,9 @@ const program = new Command();
 program
   .name("export-icons")
   .description("Export icons from a directory into JSON format")
-  .option(
-    "-d, --directory <directory>",
-    "directory to export icons from",
-    "assets/icons"
-  )
+  .option("-d, --directory <directory>", "directory to export icons from", "assets/icons")
   .option("-p, --prefix <prefix>", "prefix to add to icon names", "test")
-  .option(
-    "-o, --output <output>",
-    "output file to write the JSON to",
-    "assets/icons.json"
-  )
+  .option("-o, --output <output>", "output file to write the JSON to", "assets/icons.json")
   .action((options) => {
     if (!options.directory) {
       console.error("Please provide a directory to export icons from.");
