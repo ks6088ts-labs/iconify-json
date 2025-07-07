@@ -2,9 +2,9 @@ name: ghcr
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 env:
-  IMAGE_NAME: template-typescript
+  IMAGE_NAME: iconify-json
 jobs:
   ghcr:
     runs-on: ubuntu-latest

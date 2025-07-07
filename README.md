@@ -3,7 +3,7 @@
 [![docker-release](https://github.com/ks6088ts-labs/iconify-json/actions/workflows/docker-release.yaml/badge.svg)](https://github.com/ks6088ts-labs/iconify-json/actions/workflows/docker-release.yaml)
 [![ghcr-release](https://github.com/ks6088ts-labs/iconify-json/actions/workflows/ghcr-release.yaml/badge.svg)](https://github.com/ks6088ts-labs/iconify-json/actions/workflows/ghcr-release.yaml)
 
-# template-typescript
+# iconify-json
 
 A GitHub template repository for TypeScript
 

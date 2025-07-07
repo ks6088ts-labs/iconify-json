@@ -2,10 +2,10 @@ name: docker-release
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 jobs:
   release:
-    runs-on: 'ubuntu-latest'
+    runs-on: "ubuntu-latest"
     timeout-minutes: 5
     steps:
       - name: Check out the repo
@@ -37,5 +37,5 @@ jobs:
             GIT_REVISION=${{ github.sha }}
             GIT_TAG=${{steps.set_version.outputs.no-dash}}
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/template-typescript:${{steps.set_version.outputs.no-dash}}
-            ${{ secrets.DOCKERHUB_USERNAME }}/template-typescript:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/iconify-json:${{steps.set_version.outputs.no-dash}}
+            ${{ secrets.DOCKERHUB_USERNAME }}/iconify-json:latest
